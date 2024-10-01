@@ -75,10 +75,30 @@ export default {
 </script>
 
 <template>
+	<div id="app" class="bg-white border-b border-gray-300">
+		<div class="max-w-7xl mx-auto py-2 flex justify-center">
+			<div class="flex space-x-16">
+			<div class="flex items-center space-x-2">
+				<img src="../../../public/files/emergencycall.png" width="37" height="37" />
+				<div>
+				<div class="text-sm text-red-600 font-bold">PANGGILAN DARURAT</div>
+				<div class="text-sm text-black">(036) 123-456-789</div>
+				</div>
+			</div>
+			<div class="flex items-center space-x-2">
+				<img src="../../../public/files/clock.png" width="37" height="37" />
+				<div>
+				<div class="text-sm text-red-600 font-bold">JAM KERJA</div>
+				<div class="text-sm text-black">08.00 - 15.00 Senin s.d Jumat</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 	<nav id="nav" class="sm:container sm:mx-auto">
 		<!-- Header start -->
 		<div
-			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
+			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center"
 		>
 			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
@@ -147,7 +167,7 @@ export default {
 				<div class="hidden md:block">
 					<Button
 						title="Hire Me"
-						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+						class="text-md font-general-medium bg-red-700 hover:bg-red-500 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 						@click="showModal()"
 						aria-label="Hire Me Button"
 					/>
@@ -177,5 +197,8 @@ export default {
 	@apply text-indigo-700;
 	@apply dark:text-indigo-400;
 	@apply font-medium;
+}
+nav {
+  background-color: #ff0000; /* Change the background color to red */
 }
 </style>
